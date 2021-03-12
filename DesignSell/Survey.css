@@ -1,0 +1,39 @@
+.headh1{
+    text-align: center;
+    border: 10px solid black;
+    box-sizing: border-box;
+    border-color: black;
+    border-radius: 50px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin: 80px ;
+
+
+}
+p,label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bt{
+    color: white;
+    border-radius: 20%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+.bt:hover{
+    cursor: pointer;
+
+}
+
+.header{
+    font-size: xx-large;
+    font-style: inherit;
+}
+
+.input{
+    border: 2px solid black;
+}
