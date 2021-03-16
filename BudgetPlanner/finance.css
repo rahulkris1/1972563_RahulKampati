@@ -1,0 +1,19 @@
+table, th, tbody {
+    border: 1px solid black;
+  }
+
+  .back
+  {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+  }
+
+*{
+    margin: 20px;
+}
