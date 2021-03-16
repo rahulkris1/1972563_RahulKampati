@@ -12,7 +12,7 @@ function insertNewRecord(){
         var newCell2 = newRow.insertCell(1);
         var newCell3 = newRow.insertCell(2);
         budget += parseInt(obj[i].bVal);
-        newCell3.innerHTML = budget;
+        newCell3.innerHTML = obj[i].bVal;
         newCell1.innerHTML = obj[i].cName;
         newCell2.innerHTML = obj[i].pName;
     }
