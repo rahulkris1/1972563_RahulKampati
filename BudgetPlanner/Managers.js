@@ -3,7 +3,10 @@
 var objArr = []
 function onAdd(){
    var data = JSON.parse(sessionStorage.getItem("managers"));
-   objArr = data;
+   if(data)
+   {
+     objArr = data;
+   }
     formData();
 }
 
@@ -13,6 +16,7 @@ function formData(){
     bObj.pName = document.getElementById("Pid").value;
     bObj.bVal = document.getElementById("Bid").value;
     objArr.push(bObj);
+    alert("Data added!")
     sessionStorage.setItem("managers", JSON.stringify(objArr));
     resetData();
 
