@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cart </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="cart.css">
+  <script src="./cart.js" type="text/javascript"></script>
+</head>
+
+<body>
+ 
+<div class="container pt-3">
+    <h1>Home Page</h1><br>
+    <a href="./checkout.html" class="btn btn-danger offset-5">Checkout</a>
+    <br>
+    <br>
+    <br>
+<div class="card-deck">
+  <!-- <p>Image at the top (card-img-top):</p> -->
+  <div class="card">
+    <img class="card-img-top imgC" src="./images/ZFold2.png" alt="Card image" style="width:50%">
+    <div class="card-body">
+      <h4 class="card-title">Galaxy Z fold2</h4>
+      <h6>$1999</h6>
+      <!-- <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p> -->
+      <button value="add to cart" onclick="loadDataa('Galaxy Z fold2', '1999')" class="btn btn-primary">add to cart</button>
+    </div>
+  </div>
+  <br>
+  
+  <!-- <p>Image at the bottom (card-img-bottom):</p> -->
+   <!-- <p>Image at the top (card-img-top):</p> -->
+   <div class="card ">
+    <img class="card-img-top imgC" src="./images/Pixel 5.png" alt="Card image" style="width:50%">
+    <div class="card-body">
+      <h4 class="card-title">Google Pixel 5</h4>
+      <h6>$799</h6>
+      <!-- <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p> -->
+      <button value="add to cart" onclick="loadDataa('Google Pixel 5', '799')" class="btn btn-primary">add to cart</button>
+    </div>
+  </div>
+
+  <div class="card " >
+    <img class="card-img-top imgC" src="./images/Iphone12.png" alt="Card image" style="width:50%">
+    <div class="card-body">
+      <h4 class="card-title">Iphone 12 pro max</h4>
+      <h6>$1199</h6>
+      <!-- <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p> -->
+      <button value="add to cart" onclick="loadDataa('Iphone 12 pro max', '1199')" class="btn btn-primary">add to cart</button>
+    </div>
+  </div>
+  <div class="card " >
+    <img class="card-img-top imgC" src="./images/S21.png" alt="Card image" style="width:50%">
+    <div class="card-body">
+      <h4 class="card-title">Samsung S21 Ultra</h4>
+      <h6>$1199</h6>
+      <!-- <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p> -->
+      <button value="add to cart" onclick="loadDataa('Samsung S21 Ultra', '1199')" class="btn btn-primary">add to cart</button>
+    </div>
+  </div>
+
+  <div class="card " >
+    <img class="card-img-top imgC" src="./images/iph12mini.png" alt="Card image" style="width:50%">
+    <div class="card-body">
+      <h4 class="card-title">Iphone 12 mini</h4>
+      <h6>$699</h6>
+      <!-- <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p> -->
+      <button value="add to cart" onclick="loadDataa('Iphone 12 mini', '699')" class="btn btn-primary">add to cart</button>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
