@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body >
+    <div style="margin: 150px;">
+        <mat-card-header>
+        
+        <h1 style= "text-align:center"><u>Task Tracker</u></h1>
+    </mat-card-header>
+        <hr>
+        <mat-card-content>
+        <form class="form-group" #task = "ngForm" (ngSubmit)="frmData(task.value)">
+            <div >
+                <mat-form-field>
+                <mat-label for="id">ID</mat-label>
+                <input matInput type="text" class="form-control" name ="id" placeholder="ID" ngModel required>
+               </mat-form-field>
+                
+            </div>
+            <div class="form-group">
+                <mat-form-field>
+                <mat-label for="name">Name</mat-label>
+                <input matInput type="text" class="form-control" name ="name" placeholder="Name" ngModel required>
+                </mat-form-field>
+                
+            </div>
+            <div class="form-group">
+                <label for="task">Task</label>
+                <input matInput type="text" class="form-control" name ="task" placeholder="Task" ngModel required>
+            </div>
+            <div class="form-group">
+                <mat-form-field>
+                <mat-label for="end">Deadline</mat-label>
+                <input matInput type="text" class="form-control" name ="end" placeholder="Deadline" ngModel required>
+                </mat-form-field>
+                
+            </div>
+            <div>
+            <button mat-raised-button color="primary" 
+            style="background-color:rgb(23, 72, 138);" type="submit"><b>submit</b></button>
+            &nbsp;
+            <button mat-raised-button color="primary" 
+            style="background-color:rgb(119, 94, 94);" type="reset"><b>Reset</b></button>
+               
+            </div><br>
+            <div *ngIf="temp">
+                <table class="table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Task</th>
+                        <th>Deadline</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let i of fData">
+                            <td>{{i.id}}</td>
+                            <td> {{i.name}}   </td>
+                            <td> {{i.task}}   </td>
+                            <td> {{i.end}}   </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+        </form>
+    </mat-card-content>
+    </div>
+    
+</body>
+</html>

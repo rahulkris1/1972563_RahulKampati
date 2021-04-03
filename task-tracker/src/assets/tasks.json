@@ -1,0 +1,28 @@
+{
+  "tracker": [
+    {
+      "id": "1",
+      "name": "Rahul",
+      "task": "Swimming",
+      "end": "04/02/2021"
+    },
+    {
+      "id": "2",
+      "name": "John",
+      "task": "Excercise",
+      "end": "04/08/2021"
+    },
+    {
+      "id": "3",
+      "name": "nitesh",
+      "task": "part time",
+      "end": "04/05/2021"
+    },
+    {
+      "id": "4",
+      "name": "Sai",
+      "task": "Practise",
+      "end": "04/10/2021"
+    }
+  ]
+}
